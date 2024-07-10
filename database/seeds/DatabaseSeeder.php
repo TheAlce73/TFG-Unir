@@ -1,0 +1,101 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('users')->insertorIgnore([
+	        	'name'=>'Admin',
+	        	'email'=>'Admin@correo.net',
+	        	'password'=>Hash::make('Admin1234'),
+                'IdInGame'=>'Admin-#0',
+                'Admin'=>true,
+	        ]);
+        DB::table('users')->insertorIgnore([
+                'name'=>'User1',
+                'email'=>'User1@correo.net',
+                'password'=>Hash::make('User1234'),
+                'IdInGame'=>'User1-#1',
+                'Admin'=>false,
+            ]);
+        DB::table('users')->insertorIgnore([
+                'name'=>'User2',
+                'email'=>'User2@correo.net',
+                'password'=>Hash::make('User1234'),
+                'IdInGame'=>'User2-#2',
+                'Admin'=>false,
+            ]);
+        DB::table('users')->insertorIgnore([
+                'name'=>'User3',
+                'email'=>'User3@correo.net',
+                'password'=>Hash::make('User1234'),
+                'IdInGame'=>'User3-#3',
+                'Admin'=>false,
+            ]);
+        DB::table('users')->insertorIgnore([
+                'name'=>'User4',
+                'email'=>'User4@correo.net',
+                'password'=>Hash::make('User1234'),
+                'IdInGame'=>'User4-#4',
+                'Admin'=>false,
+            ]);
+        DB::table('users')->insertorIgnore([
+                'name'=>'User5',
+                'email'=>'User5@correo.net',
+                'password'=>Hash::make('User1234'),
+                'IdInGame'=>'User5-#5',
+                'Admin'=>false,
+            ]);
+        DB::table('partidas')->insertorIgnore([
+                'jugador1_id'=>2,
+                'jugador2_id'=>3,
+            ]);
+        DB::table('partidas')->insertorIgnore([
+                'jugador1_id'=>2,
+                'jugador2_id'=>4,
+            ]);
+        DB::table('partidas')->insertorIgnore([
+                'jugador1_id'=>2,
+                'jugador2_id'=>5,
+            ]);
+        DB::table('partidas')->insertorIgnore([
+                'jugador1_id'=>2,
+                'jugador2_id'=>6,
+            ]);
+        DB::table('partidas')->insertorIgnore([
+                'jugador1_id'=>3,
+                'jugador2_id'=>2,
+            ]);
+        DB::table('partidas')->insertorIgnore([
+                'jugador1_id'=>4,
+                'jugador2_id'=>2,
+            ]);
+        DB::table('amigos')->insertorIgnore([
+                'jugador1_id'=>1,
+                'jugador2_id'=>2,
+            ]);
+        DB::table('amigos')->insertorIgnore([
+                'jugador1_id'=>4,
+                'jugador2_id'=>2,
+            ]);
+        DB::table('amigos')->insertorIgnore([
+                'jugador1_id'=>2,
+                'jugador2_id'=>5,
+            ]);
+        DB::table('partidasAj')->insertorIgnore([
+                'jugador1_id'=>2,
+                'jugador2_id'=>3,
+            ]);
+        DB::table('partidasAj')->insertorIgnore([
+                'jugador1_id'=>2,
+                'jugador2_id'=>4,
+            ]); 
+    }
+}
