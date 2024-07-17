@@ -21,9 +21,7 @@
                             Ajedrez MinMax (Desarrollo propio)
                         <input type="radio" id="modoIAMinMax" name="modo"> </h4>
 
-                        <h4>
-                            Ajedrez sotckFish
-                        <input type="radio" id="modoIAStock" name="modo"> </h4>
+                        
                         
                     
                 </div>

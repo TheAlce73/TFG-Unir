@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ 'PICAMO GAMES' }}</title>
-    <link rel="icon" type="image/png" href="../../logos/picamonegro.png">
-    <!-- Scripts -->
+    <link rel="icon" type="image/png" href="../logos/picamonegro.png">
+    <!-- Scripts   -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -23,21 +24,23 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
 
     <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    
 
-    <script type="text/javascript" src="../resources/js/TresRaya1.1.js"></script>
-    <script type="text/javascript" src="../resources/js/TresRayaJuegoVSIA.js"></script>
-    <script type="text/javascript" src="../resources/js/TresRayaJuegoVSPL1.1.js"></script>
-    <script type="text/javascript" src="../resources/js/AjedrezJuegoVSIA1.js"></script>
+    <script type="text/javascript" src="../resources/js/Final/Ajedrez.js"></script>
+    <script type="text/javascript" src="../resources/js/Final/AjedrezIA.js"></script>
+    <script type="text/javascript" src="../resources/js/Final/AjedrezMP.js"></script>
+    <script type="text/javascript" src="../resources/js/Final/ControladorAjedrezMP.js"></script>
 
-    <script type="text/javascript" src="../resources/js/AjedrezJuegoVSPL1.js"></script>
-    <script type="text/javascript" src="../resources/js/Controlador.js"></script>
     <script type="text/javascript" src="../resources/js/Amigos.js"></script>
     <script type="text/javascript" src="../resources/js/Admin.js"></script>
+
+
+    
     <style>
         html, body {
-            background-color: #6C3483;
+            background-color: #162731;
             color: black;
             font-family: Impact, Charcoal,sans-serif;
             font-weight: 200;
@@ -52,7 +55,24 @@
             letter-spacing: .1rem;
             text-decoration: none;
             text-transform: uppercase;
-        }         
+        }    
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        td {
+            width: 75px;
+            height: 75px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 24px;
+        }
+        .white {
+            background-color: #f0d9b5;
+        }
+        .black {
+            background-color: #b58863;
+        }     
     </style>
 </head>
 <body>
@@ -61,7 +81,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="../../logos/picamolargonegro.png" width="180px" height="50px" >
+                    <img src="../logos/picamolargonegro.png" width="180px" height="50px" >
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

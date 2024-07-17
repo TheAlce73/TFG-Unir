@@ -40,7 +40,7 @@
     
     <style>
         html, body {
-            background-color: #6C3483;
+            background-color: #162731;
             color: black;
             font-family: Impact, Charcoal,sans-serif;
             font-weight: 200;

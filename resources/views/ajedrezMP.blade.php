@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
 @section('content')
 @if(isset($nombre))
@@ -17,10 +17,6 @@
                     <h2>Selecciona un modo de juego:</h2>
                         <input type="" value='{{$id}}' id="idUsr" >
 
-                        <h4> 
-                            Multijugador 
-                            <input type="radio" id="modoMP" name="modo">
-                        </h4>
 
                         <select id="tipos">
                             <option value="" class="multi"></option>
@@ -33,6 +29,7 @@
                 </div>
 
             </div>
+
             <div class="card" id="Partida" >
                 <div class="card-header">Partida</div>
                 

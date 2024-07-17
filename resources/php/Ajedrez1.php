@@ -430,7 +430,7 @@ switch ($numero) {
 			 	$tablero[$nUF[$t]][$nDF[$t]]=$fichaUno[$t];
 			 	$tablero[$nUI[$t]][$nDI[$t]]="-";
 			 	$t++;
-			 	$valor=minimaxM($tablero,true,1,$t,$colorIA,$colorJ);
+			 	$valor=minimaxM($tablero,true,3,$t,$colorIA,$colorJ);
 			 	$t--;
 			 	if ($MejorPuntuacion<$valor) {
 			 		$MejorPuntuacion=$valor;
